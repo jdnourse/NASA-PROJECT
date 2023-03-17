@@ -26,7 +26,7 @@ describe('Launches API', () => {
     const completeLaunchData = {
       mission: 'USS Enterprise',
       rocket: 'NCC 1701-D',
-      destination: 'Kepler-296 f',
+      destination: 'Kepler-1652 b',
       launchDate: 'January 4, 2028',
     };
 
