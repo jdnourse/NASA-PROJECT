@@ -77,6 +77,7 @@ describe('Launches API', () => {
         })
         .expect('Content-Type', /json/)
         .expect(400);
+
       expect(response.body).toStrictEqual({ error: 'Invalid launch date' });
     });
   });
