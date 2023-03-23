@@ -1,4 +1,4 @@
-const http = require('http');
+const https = require('https');
 require('dotenv').config();
 const app = require('./app');
 const { mongoConnect } = require('./services/mongo');
@@ -7,7 +7,7 @@ const { loadLaunchesData } = require('./models/launches.model');
 
 const PORT = process.env.PORT || 8000;
 
-const server = http.createServer(app);
+const server = https.createServer(app);
 //Async pre-load before server listening starting
 async function startServer() {
   await mongoConnect();
